@@ -71,14 +71,14 @@ class _ContactPageState extends State<ContactPage> {
                   return Container(
                     padding: EdgeInsets.all(isWide ? 36.0 : 24.0),
                     decoration: BoxDecoration(
-                      color: colorScheme.surfaceContainerLow.withOpacity(0.6),
+                      color: colorScheme.surfaceContainerLow.withValues(alpha: 0.6),
                       borderRadius: BorderRadius.circular(24),
                       border: Border.all(
-                        color: colorScheme.outlineVariant.withOpacity(0.4),
+                        color: colorScheme.outlineVariant.withValues(alpha: 0.4),
                       ),
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withOpacity(0.03),
+                          color: Colors.black.withValues(alpha: 0.03),
                           blurRadius: 20,
                           offset: const Offset(0, 10),
                         ),
@@ -91,10 +91,10 @@ class _ContactPageState extends State<ContactPage> {
                         Container(
                           padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
                           decoration: BoxDecoration(
-                            color: colorScheme.primaryContainer.withOpacity(0.5),
+                            color: colorScheme.primaryContainer.withValues(alpha: 0.5),
                             borderRadius: BorderRadius.circular(20),
                             border: Border.all(
-                              color: colorScheme.primary.withOpacity(0.2),
+                              color: colorScheme.primary.withValues(alpha: 0.2),
                             ),
                           ),
                           child: Row(
@@ -192,7 +192,7 @@ class _ContactPageState extends State<ContactPage> {
         color: colorScheme.surface,
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: colorScheme.outlineVariant.withOpacity(0.3),
+          color: colorScheme.outlineVariant.withValues(alpha: 0.3),
         ),
       ),
       child: Row(
@@ -200,7 +200,7 @@ class _ContactPageState extends State<ContactPage> {
           Container(
             padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(
-              color: colorScheme.secondaryContainer.withOpacity(0.4),
+              color: colorScheme.secondaryContainer.withValues(alpha: 0.4),
               borderRadius: BorderRadius.circular(12),
             ),
             child: Icon(
@@ -220,7 +220,7 @@ class _ContactPageState extends State<ContactPage> {
                     fontSize: 10,
                     fontWeight: FontWeight.w700,
                     letterSpacing: 1.0,
-                    color: colorScheme.onSurfaceVariant.withOpacity(0.8),
+                    color: colorScheme.onSurfaceVariant.withValues(alpha: 0.8),
                   ),
                 ),
                 const SizedBox(height: 2),

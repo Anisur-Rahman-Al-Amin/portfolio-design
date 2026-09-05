@@ -53,14 +53,14 @@ class _AboutPageState extends State<AboutPage> {
               child: Container(
                 padding: const EdgeInsets.all(32.0),
                 decoration: BoxDecoration(
-                  color: colorScheme.surfaceContainerLow.withOpacity(0.6),
+                  color: colorScheme.surfaceContainerLow.withValues(alpha: 0.6),
                   borderRadius: BorderRadius.circular(24),
                   border: Border.all(
-                    color: colorScheme.outlineVariant.withOpacity(0.4),
+                    color: colorScheme.outlineVariant.withValues(alpha: 0.4),
                   ),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.03),
+                      color: Colors.black.withValues(alpha: 0.03),
                       blurRadius: 20,
                       offset: const Offset(0, 10),
                     ),
@@ -73,10 +73,10 @@ class _AboutPageState extends State<AboutPage> {
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
                       decoration: BoxDecoration(
-                        color: colorScheme.primaryContainer.withOpacity(0.5),
+                        color: colorScheme.primaryContainer.withValues(alpha: 0.5),
                         borderRadius: BorderRadius.circular(20),
                         border: Border.all(
-                          color: colorScheme.primary.withOpacity(0.2),
+                          color: colorScheme.primary.withValues(alpha: 0.2),
                         ),
                       ),
                       child: Text(
@@ -96,7 +96,7 @@ class _AboutPageState extends State<AboutPage> {
                       shaderCallback: (bounds) => LinearGradient(
                         colors: [
                           colorScheme.onSurface,
-                          colorScheme.onSurface.withOpacity(0.8),
+                          colorScheme.onSurface.withValues(alpha: 0.8),
                         ],
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
@@ -161,7 +161,7 @@ class _AboutPageState extends State<AboutPage> {
                             color: colorScheme.surface,
                             borderRadius: BorderRadius.circular(16),
                             border: Border.all(
-                              color: colorScheme.outlineVariant.withOpacity(0.3),
+                              color: colorScheme.outlineVariant.withValues(alpha: 0.3),
                             ),
                           ),
                           child: SkillProgressBar(skill: skill),

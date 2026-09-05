@@ -50,14 +50,14 @@ class _CustomAppBarState extends State<CustomAppBar> {
               height: 56,
               padding: const EdgeInsets.symmetric(horizontal: 12),
               decoration: BoxDecoration(
-                color: colorScheme.surfaceContainerLow.withOpacity(0.75),
+                color: colorScheme.surfaceContainerLow.withValues(alpha: 0.75),
                 borderRadius: BorderRadius.circular(20),
                 border: Border.all(
-                  color: colorScheme.outlineVariant.withOpacity(0.35),
+                  color: colorScheme.outlineVariant.withValues(alpha: 0.35),
                 ),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.03),
+                    color: Colors.black.withValues(alpha: 0.03),
                     blurRadius: 16,
                     offset: const Offset(0, 8),
                   ),
@@ -86,7 +86,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
                               borderRadius: BorderRadius.circular(10),
                               boxShadow: [
                                 BoxShadow(
-                                  color: AppColors.primary.withOpacity(0.3),
+                                  color: AppColors.primary.withValues(alpha: 0.3),
                                   blurRadius: 8,
                                   offset: const Offset(0, 2),
                                 ),
@@ -138,7 +138,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
                               curve: Curves.easeOut,
                               decoration: BoxDecoration(
                                 color: isHovered
-                                    ? colorScheme.primaryContainer.withOpacity(0.5)
+                                    ? colorScheme.primaryContainer.withValues(alpha: 0.5)
                                     : Colors.transparent,
                                 borderRadius: BorderRadius.circular(12),
                               ),
@@ -168,7 +168,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
                     Container(
                       height: 20,
                       width: 1,
-                      color: colorScheme.outlineVariant.withOpacity(0.4),
+                      color: colorScheme.outlineVariant.withValues(alpha: 0.4),
                     ),
                     const SizedBox(width: 8),
                   ],
@@ -181,7 +181,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16),
                         side: BorderSide(
-                          color: colorScheme.outlineVariant.withOpacity(0.4),
+                          color: colorScheme.outlineVariant.withValues(alpha: 0.4),
                         ),
                       ),
                       color: colorScheme.surface,

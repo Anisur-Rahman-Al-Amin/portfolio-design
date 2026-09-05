@@ -30,20 +30,20 @@ class _ExperienceCardState extends State<ExperienceCard> {
         padding: const EdgeInsets.all(24),
         decoration: BoxDecoration(
           color: _isHovered
-              ? colorScheme.surfaceContainerHigh.withOpacity(0.8)
-              : colorScheme.surfaceContainerLow.withOpacity(0.6),
+              ? colorScheme.surfaceContainerHigh.withValues(alpha: 0.8)
+              : colorScheme.surfaceContainerLow.withValues(alpha: 0.6),
           borderRadius: BorderRadius.circular(24),
           border: Border.all(
             color: _isHovered
-                ? colorScheme.primary.withOpacity(0.4)
-                : colorScheme.outlineVariant.withOpacity(0.4),
+                ? colorScheme.primary.withValues(alpha: 0.4)
+                : colorScheme.outlineVariant.withValues(alpha: 0.4),
             width: _isHovered ? 1.5 : 1.0,
           ),
           boxShadow: [
             BoxShadow(
               color: _isHovered
-                  ? colorScheme.primary.withOpacity(0.08)
-                  : Colors.black.withOpacity(0.02),
+                  ? colorScheme.primary.withValues(alpha: 0.08)
+                  : Colors.black.withValues(alpha: 0.02),
               blurRadius: _isHovered ? 24 : 16,
               offset: Offset(0, _isHovered ? 8 : 4),
             ),
@@ -63,7 +63,7 @@ class _ExperienceCardState extends State<ExperienceCard> {
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     color: _isHovered
-                        ? colorScheme.primary.withOpacity(0.2)
+                        ? colorScheme.primary.withValues(alpha: 0.2)
                         : Colors.transparent,
                   ),
                   child: Container(
@@ -71,11 +71,11 @@ class _ExperienceCardState extends State<ExperienceCard> {
                     height: 10,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: _isHovered ? colorScheme.primary : colorScheme.primary.withOpacity(0.7),
+                      color: _isHovered ? colorScheme.primary : colorScheme.primary.withValues(alpha: 0.7),
                       boxShadow: _isHovered
                           ? [
                         BoxShadow(
-                          color: colorScheme.primary.withOpacity(0.6),
+                          color: colorScheme.primary.withValues(alpha: 0.6),
                           blurRadius: 8,
                           spreadRadius: 2,
                         )
@@ -177,7 +177,7 @@ class _ExperienceCardState extends State<ExperienceCard> {
         color: colorScheme.surfaceContainerHigh,
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: colorScheme.outlineVariant.withOpacity(0.3),
+          color: colorScheme.outlineVariant.withValues(alpha: 0.3),
         ),
       ),
       child: Text(

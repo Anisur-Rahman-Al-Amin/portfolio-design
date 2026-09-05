@@ -65,9 +65,9 @@ class _ExperiencePageState extends State<ExperiencePage> {
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
                           colors: [
-                            colorScheme.primary.withOpacity(0.5),
-                            colorScheme.primary.withOpacity(0.15),
-                            colorScheme.outlineVariant.withOpacity(0.05),
+                            colorScheme.primary.withValues(alpha: 0.5),
+                            colorScheme.primary.withValues(alpha: 0.15),
+                            colorScheme.outlineVariant.withValues(alpha: 0.05),
                           ],
                         ),
                       ),
