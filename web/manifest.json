@@ -1,23 +1,23 @@
 {
-    "name": "my_portfolio_web",
-    "short_name": "my_portfolio_web",
+    "name": "Anisur Rahman Portfolio",
+    "short_name": "AR Portfolio",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#070B14",
+    "theme_color": "#4F46E5",
+    "description": "Anisur Rahman Portfolio - Flutter developer and product builder.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
         {
-            "src": "icons/Icon-192.png",
+            "src": "icons/portfolio_mark.svg",
             "sizes": "192x192",
-            "type": "image/png"
+            "type": "image/svg+xml"
         },
         {
-            "src": "icons/Icon-512.png",
+            "src": "icons/portfolio_mark.svg",
             "sizes": "512x512",
-            "type": "image/png"
+            "type": "image/svg+xml"
         },
         {
             "src": "icons/Icon-maskable-192.png",
